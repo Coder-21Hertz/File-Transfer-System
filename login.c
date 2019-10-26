@@ -59,7 +59,6 @@ char server_login(SSL *ssl)
         if(login_or_create == 2)
         {
             sprintf(sql, "insert into login values('%s','%s')",username, password);
-
             res = mysql_query(conn_ptr, sql);
 
             if(res)
